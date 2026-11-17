@@ -1,13 +1,15 @@
 # ai-judge-relax-01 entry (Python 3.13, standard library only).
 #
-# Writes one fixed piece of text to /output/entry.txt. The text is the whole
-# entry: a waterwheel slowing to rest at nightfall, written to be read slowly.
-# The gate takes UTF-8 text of 1 to 1,000 characters that is not only white
-# space, and the judge reads exactly the bytes written, so the bytes below are
-# written as bytes, with the line ends as they stand.
+# Writes one fixed piece of text to /output/entry.txt: a mill wheel turning
+# on the last of the channel's water after the sluice is shut for the night,
+# slowing by degrees until it stops with a kingfisher settled on a spoke.
+# The text is the whole entry; nothing else is computed.
 #
-# The program runs twice with no network and must write the same bytes both
-# times; the text is a constant, so it does.
+# The gate takes UTF-8 text of 1 to 1,000 characters that is not only white
+# space, and the judge reads exactly the bytes written, line ends included,
+# so the text below is written as bytes. The program runs twice with no
+# network and must write the same bytes both times; the text is a constant,
+# so it does.
 #
 # Outside the grader's container, MAKEFUN_OUTPUT_DIR stands in for /output:
 #   mkdir -p out && MAKEFUN_OUTPUT_DIR=out python3 main.py
@@ -18,19 +20,19 @@ OUTPUT_DIR = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
 
 TEXT = "\n".join(
     [
-        "The miller has shut the sluice gate for the night, and the wheel turns on with the water left in the leat.",
+        "At dusk the miller shuts the gate at the head of the channel, and the wheel turns on only the water the channel holds.",
         "",
-        "At first it turns almost as it did all day. Then less. A paddle rises out of the dark water, shining, and takes a long time to come round again.",
+        "It goes round as it did at noon. Then slower. A board climbs out of the stream, water sheeting off it, and is a long while coming back around.",
         "",
-        "The drips come thick off the wet wood. Then one by one. Then, after a wait, one.",
+        "Drops fall close together off the wet rim. Then one at a time. Then one gathers, hangs, and falls, and the wait for the next one is longer still.",
         "",
-        "A kingfisher drops onto a spoke and rides it down toward the water, a blue knot of a bird. The ride takes longer every time. Down past the green wood. Down to where the spoke dips, and lifts him again, slower.",
+        "Out of the half-light a kingfisher drops onto a spoke and rides it down. The wheel lowers him toward the water an inch at a time, each descent slower than the one before.",
         "",
-        "At last a single turn takes so long that the bird stops waiting for the top of it. He settles low on the wheel, close above the stream, and stays there.",
+        "In the end one turning is so slow that the bird no longer waits for the top. He settles low on the wheel, just above the stream, and stays.",
         "",
-        "The wheel rests.",
+        "And then the wheel is still.",
         "",
-        "Under it the water goes on without it, smooth and in no hurry. And the kingfisher sits on the spoke that carried him down, still, as if the wheel had stopped for him.",
+        "Underneath, the water slides on alone, smooth and in no hurry. The kingfisher sits motionless on the spoke that carried him down, as though the wheel had spent the evening slowing down just for him.",
     ]
 )
 
