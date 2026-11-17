@@ -22,7 +22,7 @@ TEXT = "\n".join(
         "",
         "A kingfisher lands on a spoke and rides it down toward the water, blue as a bead of sky slipped loose. The ride takes longer each time. Down past the moss. Down to where the spoke dips, and lifts him, slower.",
         "",
-        "At last the wheel takes so long over one turn that the bird stops watching for the top, and settles where he is, low on the wheel, close over the stream.",
+        "At last the wheel takes so long over one turn that the bird stops waiting for the top, and settles where he is, low on the wheel, close over the stream.",
         "",
         "The wheel rests.",
         "",
