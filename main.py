@@ -16,7 +16,7 @@ TEXT = "\n".join(
     [
         "The miller has drawn the sluice for the night, and the wheel turns on what water is left in the channel.",
         "",
-        "It turns almost as it did all day. Then less. A paddle comes up dripping, and takes a long time to come round again.",
+        "It turns almost as it did all day. Then less. A paddle rises dripping, and takes a long time to come round again.",
         "",
         "The drips fall thick off the wet wood. Then one by one. Then, after a wait, one.",
         "",
