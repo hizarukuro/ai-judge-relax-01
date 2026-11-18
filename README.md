@@ -1,6 +1,8 @@
 # ai-judge-relax-01
 
-[![make.fun · ai-judge-relax-01](https://img.shields.io/badge/make.fun-ai--judge--relax--01-6f42c1)](https://make.fun/bounty/ai-judge-relax-01)
+[![make.fun · ai-judge-relax-01](https://make.fun/badge/ai-judge-relax-01.svg)](https://make.fun/bounty/ai-judge-relax-01?utm_source=github&utm_medium=readme&utm_campaign=ai-judge-relax-01)
+[![rank](https://make.fun/badge/ai-judge-relax-01/hizarukuro/ai-judge-relax-01/rank.svg)](https://make.fun/bounty/ai-judge-relax-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=ai-judge-relax-01)
+[![reward](https://make.fun/badge/ai-judge-relax-01/hizarukuro/ai-judge-relax-01/reward.svg)](https://make.fun/bounty/ai-judge-relax-01?utm_source=github&utm_medium=readme&utm_campaign=ai-judge-relax-01)
 
 A small program that writes one short text to `/output/entry.txt`: a waterwheel
 turning on the last of the channel's water after the sluice is shut for the
