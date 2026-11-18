@@ -1,15 +1,10 @@
-# ai-judge-relax-01 entry (Python 3.13, standard library only).
+# ai-judge-relax-01 draft v2 candidate (Python 3.13, standard library only).
 #
-# Writes one fixed piece of text to /output/entry.txt: a mill wheel turning
-# on the last of the channel's water after the sluice is shut for the night,
-# slowing by degrees until it stops with a kingfisher settled on a spoke.
-# The text is the whole entry; nothing else is computed.
-#
-# The gate takes UTF-8 text of 1 to 1,000 characters that is not only white
-# space, and the judge reads exactly the bytes written, line ends included,
-# so the text below is written as bytes. The program runs twice with no
-# network and must write the same bytes both times; the text is a constant,
-# so it does.
+# Writes one fixed text to /output/entry.txt: a child asleep on a grandmother's
+# lap while her knitting needles slow, space out, and stop. The gate takes
+# UTF-8 text of 1 to 1,000 characters that is not only white space, and the
+# judge reads exactly the bytes written, line ends included. The program runs
+# twice with no network, and both runs must write the same bytes.
 #
 # Outside the grader's container, MAKEFUN_OUTPUT_DIR stands in for /output:
 #   mkdir -p out && MAKEFUN_OUTPUT_DIR=out python3 main.py
@@ -20,19 +15,21 @@ OUTPUT_DIR = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
 
 TEXT = "\n".join(
     [
-        "At dusk the miller shuts the gate at the head of the channel, and the wheel turns on only the water the channel holds.",
+        "You are asleep before the lamp is warm, curled on the sofa, your head in your grandmother's lap, your shoes still on.",
         "",
-        "It goes round as it did at noon. Then slower. A board climbs out of the stream, water sheeting off it, and is a long while coming back around.",
+        "Above you her needles are going, soft as rain through a roof. Click, and the wool slides. Click, and it slides again.",
         "",
-        "Drops fall close together off the wet rim. Then one at a time. Then one gathers, hangs, and falls, and the wait for the next one is longer still.",
+        "She is knitting a scarf nobody asked for. It has grown past her knees, off the sofa, and lies in grey folds on the rug, longer than any neck it will meet.",
         "",
-        "Out of the half-light a kingfisher drops onto a spoke and rides it down. The wheel lowers him toward the water an inch at a time, each descent slower than the one before.",
+        "After a while the clicks leave more room between them. A stitch. A stitch. Her hands are slowing to keep time with your breathing.",
         "",
-        "In the end one turning is so slow that the bird no longer waits for the top. He settles low on the wheel, just above the stream, and stays.",
+        "Once, her thumb leaves the needle and crosses your hair, the way you settle a blanket over someone who never asked. Then the wool again. Click. A while. Click.",
         "",
-        "And then the wheel is still.",
+        "In its basket the ball of yarn turns, smaller each time, and rests.",
         "",
-        "Underneath, the water slides on alone, smooth and in no hurry. The kingfisher sits motionless on the spoke that carried him down, as though the wheel had spent the evening slowing down just for him.",
+        "Then a click does not come. The needle rests, its stitch half made, and her hand comes down and settles on your hair, and stays.",
+        "",
+        "The lamp stays on. The scarf can keep till morning. Nothing else is going to happen tonight.",
     ]
 )
 
